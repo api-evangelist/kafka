@@ -1,105 +1,93 @@
-name: Apache Kafka API
-description: A distributed event streaming platform for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications
-url: https://kafka.apache.org
-image: https://kafka.apache.org/images/logo.png
-created: '2024-01-01'
-modified: '2024-01-01'
-apis:
-- name: Kafka Producer API
-  description: API for publishing streams of records to Kafka topics
-  humanURL: https://kafka.apache.org/documentation/#producerapi
-  baseURL: kafka://localhost:9092
-  tags:
-  - Streaming
-  - Messaging
-  - Producer
-  properties:
-  - type: Documentation
-    url: https://kafka.apache.org/documentation/#producerapi
-  - type: JavaDocs
-    url: https://kafka.apache.org/35/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html
-  - type: Configuration
-    url: https://kafka.apache.org/documentation/#producerconfigs
-- name: Kafka Consumer API
-  description: API for subscribing to topics and processing streams of records
-  humanURL: https://kafka.apache.org/documentation/#consumerapi
-  baseURL: kafka://localhost:9092
-  tags:
-  - Streaming
-  - Messaging
-  - Consumer
-  properties:
-  - type: Documentation
-    url: https://kafka.apache.org/documentation/#consumerapi
-  - type: JavaDocs
-    url: https://kafka.apache.org/35/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html
-  - type: Configuration
-    url: https://kafka.apache.org/documentation/#consumerconfigs
-- name: Kafka Streams API
-  description: API for building stream processing applications and microservices
-  humanURL: https://kafka.apache.org/documentation/streams/
-  baseURL: kafka://localhost:9092
-  tags:
-  - Streaming
-  - Processing
-  - Microservices
-  properties:
-  - type: Documentation
-    url: https://kafka.apache.org/documentation/streams/
-  - type: JavaDocs
-    url: https://kafka.apache.org/35/javadoc/org/apache/kafka/streams/package-summary.html
-  - type: Tutorial
-    url: https://kafka.apache.org/documentation/streams/tutorial
-- name: Kafka Connect API
-  description: API for integrating Kafka with external systems through connectors
-  humanURL: https://kafka.apache.org/documentation/#connect
-  baseURL: http://localhost:8083
-  tags:
-  - Integration
-  - Connectors
-  - ETL
-  properties:
-  - type: Documentation
-    url: https://kafka.apache.org/documentation/#connect
-  - type: REST API
-    url: https://kafka.apache.org/documentation/#connect_rest
-  - type: Connector Configs
-    url: https://kafka.apache.org/documentation/#connectconfigs
-- name: Kafka Admin API
-  description: API for managing and inspecting topics, brokers, configurations, and ACLs
-  humanURL: https://kafka.apache.org/documentation/#adminapi
-  baseURL: kafka://localhost:9092
-  tags:
-  - Administration
-  - Management
-  - Operations
-  properties:
-  - type: Documentation
-    url: https://kafka.apache.org/documentation/#adminapi
-  - type: JavaDocs
-    url: https://kafka.apache.org/35/javadoc/org/apache/kafka/clients/admin/Admin.html
-common:
-- type: Getting Started
-  url: https://kafka.apache.org/quickstart
-- type: Documentation
-  url: https://kafka.apache.org/documentation/
-- type: GitHub
-  url: https://github.com/apache/kafka
-- type: Downloads
-  url: https://kafka.apache.org/downloads
-- type: Community
-  url: https://kafka.apache.org/contact
-- type: Security
-  url: https://kafka.apache.org/documentation/#security
-- type: License
-  url: https://www.apache.org/licenses/LICENSE-2.0
-maintainers:
-- name: Apache Software Foundation
-  email: dev@kafka.apache.org
-  url: https://kafka.apache.org
+aid: kafka
+name: Apache Kafka
+description: >-
+  Apache Kafka is a distributed event streaming platform for high-performance
+  data pipelines, streaming analytics, data integration, and mission-critical
+  applications. It provides high-throughput, fault-tolerant, publish-subscribe
+  messaging.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-- Streaming
-- Messaging
-- Event Driven
-- Real-time
-- Distributed Systems
+  - Streaming
+  - Messaging
+  - Event Driven
+  - Real-time
+  - Distributed Systems
+url: https://raw.githubusercontent.com/api-evangelist/kafka/refs/heads/main/apis.yml
+created: '2024-01-01'
+modified: '2026-03-16'
+specificationVersion: '0.19'
+apis:
+  - aid: kafka:producer-api
+    name: Kafka Producer API
+    description: API for publishing streams of records to Kafka topics.
+    humanURL: https://kafka.apache.org/documentation/#producerapi
+    tags:
+      - Streaming
+      - Messaging
+      - Producer
+    properties:
+      - type: Documentation
+        url: https://kafka.apache.org/documentation/#producerapi
+  - aid: kafka:consumer-api
+    name: Kafka Consumer API
+    description: API for subscribing to topics and processing streams of records.
+    humanURL: https://kafka.apache.org/documentation/#consumerapi
+    tags:
+      - Streaming
+      - Messaging
+      - Consumer
+    properties:
+      - type: Documentation
+        url: https://kafka.apache.org/documentation/#consumerapi
+  - aid: kafka:streams-api
+    name: Kafka Streams API
+    description: >-
+      API for building stream processing applications and microservices on top
+      of Kafka.
+    humanURL: https://kafka.apache.org/documentation/streams/
+    tags:
+      - Streaming
+      - Processing
+    properties:
+      - type: Documentation
+        url: https://kafka.apache.org/documentation/streams/
+  - aid: kafka:connect-api
+    name: Kafka Connect REST API
+    description: >-
+      REST API for integrating Kafka with external systems through connectors.
+    humanURL: https://kafka.apache.org/documentation/#connect
+    baseURL: http://localhost:8083
+    tags:
+      - Integration
+      - Connectors
+    properties:
+      - type: Documentation
+        url: https://kafka.apache.org/documentation/#connect_rest
+  - aid: kafka:admin-api
+    name: Kafka Admin API
+    description: >-
+      API for managing and inspecting topics, brokers, configurations, and ACLs.
+    humanURL: https://kafka.apache.org/documentation/#adminapi
+    tags:
+      - Administration
+      - Management
+    properties:
+      - type: Documentation
+        url: https://kafka.apache.org/documentation/#adminapi
+common:
+  - type: Website
+    url: https://kafka.apache.org
+  - type: Documentation
+    url: https://kafka.apache.org/documentation/
+  - type: Getting Started
+    url: https://kafka.apache.org/quickstart
+  - type: GitHub Organization
+    url: https://github.com/apache/kafka
+  - type: Blog
+    url: https://kafka.apache.org/blog
+  - type: Community
+    url: https://kafka.apache.org/contact
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
