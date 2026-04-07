@@ -8,11 +8,11 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Streaming
-  - Messaging
-  - Event Driven
-  - Real-time
   - Distributed Systems
+  - Event Driven
+  - Messaging
+  - Real-Time
+  - Streaming
 url: https://raw.githubusercontent.com/api-evangelist/kafka/refs/heads/main/apis.yml
 created: '2024-01-01'
 modified: '2026-03-16'
@@ -23,9 +23,9 @@ apis:
     description: API for publishing streams of records to Kafka topics.
     humanURL: https://kafka.apache.org/documentation/#producerapi
     tags:
-      - Streaming
       - Messaging
       - Producer
+      - Streaming
     properties:
       - type: Documentation
         url: https://kafka.apache.org/documentation/#producerapi
@@ -34,9 +34,9 @@ apis:
     description: API for subscribing to topics and processing streams of records.
     humanURL: https://kafka.apache.org/documentation/#consumerapi
     tags:
-      - Streaming
-      - Messaging
       - Consumer
+      - Messaging
+      - Streaming
     properties:
       - type: Documentation
         url: https://kafka.apache.org/documentation/#consumerapi
@@ -47,8 +47,8 @@ apis:
       of Kafka.
     humanURL: https://kafka.apache.org/documentation/streams/
     tags:
-      - Streaming
       - Processing
+      - Streaming
     properties:
       - type: Documentation
         url: https://kafka.apache.org/documentation/streams/
@@ -59,8 +59,8 @@ apis:
     humanURL: https://kafka.apache.org/documentation/#connect
     baseURL: http://localhost:8083
     tags:
-      - Integration
       - Connectors
+      - Integration
     properties:
       - type: Documentation
         url: https://kafka.apache.org/documentation/#connect_rest
