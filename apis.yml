@@ -76,6 +76,8 @@ apis:
       - type: Documentation
         url: https://kafka.apache.org/documentation/#adminapi
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/apachekafka
   - type: Website
     url: https://kafka.apache.org
   - type: Documentation
