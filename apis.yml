@@ -15,7 +15,7 @@ tags:
   - Streaming
 url: https://raw.githubusercontent.com/api-evangelist/kafka/refs/heads/main/apis.yml
 created: '2024-01-01'
-modified: '2026-04-28'
+modified: '2026-05-30'
 specificationVersion: '0.19'
 apis:
   - aid: kafka:producer-api
@@ -29,6 +29,8 @@ apis:
     properties:
       - type: Documentation
         url: https://kafka.apache.org/documentation/#producerapi
+      - type: AsyncAPI
+        url: https://raw.githubusercontent.com/api-evangelist/kafka/refs/heads/main/asyncapi/kafka-asyncapi.yml
   - aid: kafka:consumer-api
     name: Kafka Consumer API
     description: API for subscribing to topics and processing streams of records.
@@ -40,6 +42,8 @@ apis:
     properties:
       - type: Documentation
         url: https://kafka.apache.org/documentation/#consumerapi
+      - type: AsyncAPI
+        url: https://raw.githubusercontent.com/api-evangelist/kafka/refs/heads/main/asyncapi/kafka-asyncapi.yml
   - aid: kafka:streams-api
     name: Kafka Streams API
     description: >-
@@ -76,6 +80,8 @@ apis:
       - type: Documentation
         url: https://kafka.apache.org/documentation/#adminapi
 common:
+  - type: AsyncAPI
+    url: https://raw.githubusercontent.com/api-evangelist/kafka/refs/heads/main/asyncapi/kafka-asyncapi.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/apachekafka
   - type: Website
