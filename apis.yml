@@ -80,6 +80,10 @@ apis:
       - type: Documentation
         url: https://kafka.apache.org/documentation/#adminapi
 common:
+  - type: VulnerabilityDisclosure
+    url: security/kafka-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/kafka-domain-security.yml
   - type: AsyncAPI
     url: https://raw.githubusercontent.com/api-evangelist/kafka/refs/heads/main/asyncapi/kafka-asyncapi.yml
   - type: LinkedIn
