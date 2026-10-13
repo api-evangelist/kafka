@@ -1,140 +1,30 @@
 aid: kafka
 name: Apache Kafka
-description: >-
-  Apache Kafka is a distributed event streaming platform for high-performance
-  data pipelines, streaming analytics, data integration, and mission-critical
-  applications. It provides high-throughput, fault-tolerant, publish-subscribe
-  messaging.
+description: 'Apache Kafka, the open-source distributed event streaming platform from the Apache Software Foundation.
+  This is a duplicate slug: Apache Kafka is profiled in the apache-kafka repository, which is canonical and
+  now holds the kafka.apache.org website. Consolidated 2026-10-13, approved by Kin Lane.'
 type: Index
-deliveryModel:
-  model: unknown
-  open_source: false
-  commercial: false
-  callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
-  source:
-  - none
-  generated: '2026-08-28'
-  method: derived
-accessModel:
-  pricing: freemium
-  onboarding: unknown
-  trial: false
-  try_now: false
-  public: false
-  label: Freemium
-  confidence: medium
-  source:
-  - plans
-  generated: '2026-07-22'
-  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kafka.png
 tags:
-  - Distributed Systems
-  - Event-Driven
-  - Messaging
-  - Real-Time
-  - Streaming
-tags_raw:
-  - Distributed Systems
-  - Event Driven
-  - Messaging
-  - Real-Time
-  - Streaming
+- Distributed Systems
+- Event-Driven
+- Messaging
+- Real-Time
+- Streaming
 url: https://raw.githubusercontent.com/api-evangelist/kafka/refs/heads/main/apis.yml
 created: '2024-01-01'
-modified: '2026-05-30'
+modified: '2026-10-13'
 specificationVersion: '0.23'
-apis:
-  - aid: kafka:producer-api
-    name: Kafka Producer API
-    description: API for publishing streams of records to Kafka topics.
-    humanURL: https://kafka.apache.org/documentation/#producerapi
-    tags:
-      - Messaging
-      - Producer
-      - Streaming
-    properties:
-      - type: Documentation
-        url: https://kafka.apache.org/documentation/#producerapi
-      - type: AsyncAPI
-        url: https://raw.githubusercontent.com/api-evangelist/kafka/refs/heads/main/asyncapi/kafka-asyncapi.yml
-  - aid: kafka:consumer-api
-    name: Kafka Consumer API
-    description: API for subscribing to topics and processing streams of records.
-    humanURL: https://kafka.apache.org/documentation/#consumerapi
-    tags:
-      - Consumer
-      - Messaging
-      - Streaming
-    properties:
-      - type: Documentation
-        url: https://kafka.apache.org/documentation/#consumerapi
-      - type: AsyncAPI
-        url: https://raw.githubusercontent.com/api-evangelist/kafka/refs/heads/main/asyncapi/kafka-asyncapi.yml
-  - aid: kafka:streams-api
-    name: Kafka Streams API
-    description: >-
-      API for building stream processing applications and microservices on top
-      of Kafka.
-    humanURL: https://kafka.apache.org/documentation/streams/
-    tags:
-      - Processing
-      - Streaming
-    properties:
-      - type: Documentation
-        url: https://kafka.apache.org/documentation/streams/
-  - aid: kafka:connect-api
-    name: Kafka Connect REST API
-    description: >-
-      REST API for integrating Kafka with external systems through connectors.
-    humanURL: https://kafka.apache.org/documentation/#connect
-    baseURL: http://localhost:8083
-    tags:
-      - Connectors
-      - Integration
-    properties:
-      - type: Documentation
-        url: https://kafka.apache.org/documentation/#connect_rest
-  - aid: kafka:admin-api
-    name: Kafka Admin API
-    description: >-
-      API for managing and inspecting topics, brokers, configurations, and ACLs.
-    humanURL: https://kafka.apache.org/documentation/#adminapi
-    tags:
-      - Administration
-      - Management
-    properties:
-      - type: Documentation
-        url: https://kafka.apache.org/documentation/#adminapi
-common:
-  - type: Plans
-    url: plans/kafka-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/kafka-rate-limits.yml
-  - type: FinOps
-    url: finops/kafka-finops.yml
-  - type: VulnerabilityDisclosure
-    url: security/kafka-vulnerability-disclosure.yml
-  - type: DomainSecurity
-    url: security/kafka-domain-security.yml
-  - type: AsyncAPI
-    url: https://raw.githubusercontent.com/api-evangelist/kafka/refs/heads/main/asyncapi/kafka-asyncapi.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/apachekafka
-  - type: Website
-    url: https://kafka.apache.org
-  - type: Documentation
-    url: https://kafka.apache.org/documentation/
-  - type: GettingStarted
-    url: https://kafka.apache.org/quickstart
-  - type: GitHubOrganization
-    url: https://github.com/apache/kafka
-  - type: Blog
-    url: https://kafka.apache.org/blog
-  - type: Community
-    url: https://kafka.apache.org/contact
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
+common:
+- type: ParentCompany
+  url: https://kafka.apache.org/
+  name: Apache Kafka (apache-kafka)
+- type: Documentation
+  url: https://kafka.apache.org/documentation/
+apis: []
+x-parent: apache-kafka
+x-relationship: duplicate
+x-consolidated-into: apache-kafka
