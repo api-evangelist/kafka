@@ -64,6 +64,32 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-This profile has been **merged into [apache-kafka](https://apis.io/providers/apache-kafka/)** — the two records described the same company, and that one is canonical.
+> **Retired — merged into [Apache Kafka](https://apis.io/providers/apache-kafka/).** The two records described the same company, and that one is canonical. Nothing in this repository is maintained any more.
 
-Nothing here is maintained any more. The company's current profile, rating and artifacts are at [apis.io/providers/apache-kafka/](https://apis.io/providers/apache-kafka/).
+**Why:** Duplicate of apache-kafka (same project). apache-kafka is canonical: richer (12 REST Proxy / Connect split specs) and slug matches the project name; it now carries kafka.apache.org as its Website (it pointed at www.apache.org, the foundation). The doc-only Producer, Consumer, Streams and Admin client API entries and the Kafka AsyncAPI were moved into apache-kafka with x-moved-from; the Connect REST API page points at the apache-kafka Connectors API; artifacts map 1:1 where an equivalent exists, otherwise to the provider page. kafka stays live as a pointer profile with no APIs. Approved by Kin Lane 2026-10-13.
+
+**Retired:** 2026-10-13
+
+## Where to go now
+
+The current profile, APIs, artifacts and rating for Apache Kafka are on APIs.io at **[apis.io/providers/apache-kafka/](https://apis.io/providers/apache-kafka/)**.
+
+Pages that used to belong to this profile now live at:
+
+- [Apache Kafka Admin API](https://apis.io/apis/apache-kafka/apache-kafka-admin-api/)
+- [Apache Kafka Connectors API](https://apis.io/apis/apache-kafka/apache-kafka-connectors-api/)
+- [Apache Kafka Consumer API](https://apis.io/apis/apache-kafka/apache-kafka-consumer-api/)
+- [Apache Kafka Producer API](https://apis.io/apis/apache-kafka/apache-kafka-producer-api/)
+- [Apache Kafka Streams API](https://apis.io/apis/apache-kafka/apache-kafka-streams-api/)
+- [Apache Kafka AsyncAPI](https://apis.io/asyncapis/apache-kafka/apache-kafka-asyncapi/)
+- [Topic](https://apis.io/channels/apache-kafka/topic/)
+- [Apache Kafka FinOps](https://apis.io/finops/apache-kafka/apache-kafka-finops/)
+- [Apache Kafka Plans Pricing](https://apis.io/plans/apache-kafka/apache-kafka-plans-pricing/)
+- [Apache Kafka Rate Limits](https://apis.io/rate-limits/apache-kafka/apache-kafka-rate-limits/)
+- [Apache Kafka AsyncAPI Spectral Rules](https://apis.io/rules/apache-kafka/apache-kafka-asyncapi-spectral-rules/)
+- [Apache Kafka Domain Security](https://apis.io/security/apache-kafka/apache-kafka-domain-security/)
+- [Apache Kafka Vulnerability Disclosure](https://apis.io/security/apache-kafka/apache-kafka-vulnerability-disclosure/)
+
+## Open an issue
+
+Issues about Apache Kafka belong on the canonical profile: [open one on api-evangelist/apache-kafka](https://github.com/api-evangelist/apache-kafka/issues/new). If you think this merge was a mistake — these were really two companies — say so there or email [info@apievangelist.com](mailto:info@apievangelist.com).
